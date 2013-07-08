@@ -59,7 +59,7 @@ var checkHtml = function(html, checksfile) {
 var checkHtmlFile = function(htmlfile, checksfile) {
     var html = fs.readFileSync(htmlfile);
     return checkHtml(html, checksfile);
-}
+};
 
 var checkHtmlUrl = function(htmlurl, checksfile, callback) {
     rest.get(htmlurl).on('complete', function (html) {
@@ -69,12 +69,12 @@ var checkHtmlUrl = function(htmlurl, checksfile, callback) {
         }
         callback(checkHtml(html, checksfile));
     });
-}
+};
 
 var outJson = function (obj) {
     var outJson = JSON.stringify(obj, null, 4);
     console.log(outJson);
-}
+};
 
 if(require.main == module) {
     program
