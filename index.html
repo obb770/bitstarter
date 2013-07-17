@@ -1,11 +1,24 @@
 <!DOCTYPE>
 <html lang="en">
   <head>
-    <title>My First Bitstarter</title>
     <meta charset="utf-8">
+    <title>My First Bitstarter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css">
     <link type="text/css" rel="stylesheet"
         href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
     <style type="text/css">
+      /* Large desktop */
+      @media (min-width: 980px) {
+        body {
+          padding-top: 60px;
+        }
+      }
+
+      /* Landscape phones and down */
+      @media (max-width: 480px) {
+      }
+
       body {
         padding-top: 20px;
         padding-bottom: 40px;
@@ -33,35 +46,46 @@
         height: 40px;
         line-height: 40px;
       }
-      div.row {
+      div.row-fluid {
         border: 1px solid;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="row navigation">
-        <div class="span2 logo">
-          Logo
-        </div>
-        <div class="span6 blank">
-          Blank
-        </div>
-        <div class="span4 about">
-          About
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar"
+              data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Bitstarter</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="row heading">
+    </div>
+
+    <div class="container">
+      <div class="row-fluid heading">
         <div class="span12">
           <h1>Bitstarter Title</h1>
         </div>
       </div>
-      <div class="row subheading">
+      <div class="row-fluid subheading">
         <div class="span12">
           <p class="lead">This is my first bitstarter project.</p>
         </div>
       </div>
-      <div class="row pitch">
+      <div class="row-fluid pitch">
         <div class="span6 video">
           Video
         </div>
@@ -77,22 +101,22 @@
           </div>
         </div>
       </div>
-      <div class="row section1">
+      <div class="row-fluid section1">
         <div class="span12">
           Marketing Section 1
         </div>
       </div>
-      <div class="row section2">
+      <div class="row-fluid section2">
         <div class="span12">
           Marketing Section 2
         </div>
       </div>
-      <div class="row faq">
+      <div class="row-fluid faq">
         <div class="span12">
           FAQ
         </div>
       </div>
-      <div class="row footer">
+      <div class="row-fluid footer">
         <div class="span12">
           Footer
         <div>
