@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
     <!-- find another hosting solution -->
     <link rel="stylesheet" href="https://rawgithub.com/noizwaves/bootstrap-social-buttons/master/social-buttons.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.js"></script>
     <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,500italic,600italic,700italic,300,400,500,600,700" rel="stylesheet">
     <style type="text/css">
@@ -181,10 +183,40 @@
 
 
       <div class="row-fluid faq">
-        <div class="span12">
-          FAQ
+        <div class="span10 offset1">
+          <h3>FAQ</h3>
+          <div class="accordion" id="accordion2">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse"
+                    data-parent="#accordion2" href="#collapseOne">
+                  What does FAQ stand for?
+                </a>
+              </div>
+              <div id="collapseOne" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  Frequently Asked Question.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse"
+                    data-parent="#accordion2" href="#collapseTwo">
+                  What's a Frequently Asked Question?
+                </a>
+              </div>
+              <div id="collapseTwo" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  A question which is commonly asked by users.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
+
       <div class="row-fluid footer">
         <div class="span12">
           Footer
