@@ -178,12 +178,16 @@
           </div>
           </div>
           <div class="row-fluid">
-          <div class="span6 offset3 order">
+          <div class="order">
+            <!-- hack around the 227px wide left aligned coinbase button -->
+            <div class="coinbase-btn-wrapper"
+                style="width: 227px; margin: 0 auto;">
             <a class="coinbase-button"
                 data-code="53bf4775593faf9006841c779fb6bb31"
                 data-button-style="custom_large"
                 data-button-text="Preorder with Bitcoin"
                 href="https://coinbase.com/checkouts/53bf4775593faf9006841c779fb6bb31">Preorder with Bitcoin</a>
+            </div>
             <script src="https://coinbase.com/assets/button.js"
                 type="text/javascript">
             </script>
